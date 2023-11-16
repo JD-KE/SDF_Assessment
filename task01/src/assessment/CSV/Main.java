@@ -83,7 +83,7 @@ public class Main {
             
         }
 
-        // should be 10842, + 1 is to account for skipped header
-        System.out.printf("Total lines in file: %d%n",totalLinesRead + 1);
+        // should be 10841 as header is skipped
+        System.out.printf("Total lines in file: %d%n",totalLinesRead);
     }
 }
