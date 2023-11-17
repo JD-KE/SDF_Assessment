@@ -124,7 +124,7 @@ public class PurchaseSession {
             bw.flush();
             bw.write("email: tanjinde2000@yahoo.com.sg\n");
             bw.flush();
-            bw.write(String.format("%s\n", items));
+            bw.write(String.format("items: %s\n", items));
             bw.flush();
             bw.write(String.format("spent: %f\n", spent));
             bw.flush();
@@ -143,6 +143,7 @@ public class PurchaseSession {
             socket.close();
 
         }
+        System.out.println(socket.isClosed());
     }
 
 }
